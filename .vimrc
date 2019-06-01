@@ -1,9 +1,22 @@
+set ff=unix
+set encoding=utf-8
 syntax on
+
+set nocompatible
+set cmdheight=2
+set showcmd
+
+" search
+set showmatch
+
+" tab and indent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set noexpandtab
 set autoindent
+set smarttab
+
 set foldmethod=indent
 set wildmenu
 set wildmode=list:longest,full
@@ -27,11 +40,16 @@ let g:airline_powerline_fonts=1
 let g:clang_format#command = 'clang-format-7'
 
 execute pathogen#infect()
-filetype plugin indent on
+" filetype plugin indent on
 
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 nnoremap <cr> :YcmCompleter FixIt<cr>
+
+" comment and vim-commentary
+nnoremap <C-/> :Commentary<cr>
+vnoremap <C-/> :Commentary<cr>
+
 
 colo one
 set bg=dark
