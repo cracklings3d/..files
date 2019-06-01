@@ -1,0 +1,10 @@
+xterm*background: Black
+xterm*foreground: grey
+xterm*faceName: Source Code Pro
+xterm*faceSize: 12
+xterm*loginShell: true
+xterm*vt100*geometry: 80x35
+xterm*saveLines: 2000
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+
