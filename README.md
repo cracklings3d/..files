@@ -4,6 +4,6 @@
 ----
 
 Clone this repo into `~/`, create symlinks under `~/` with
-```bash
+```sh
 ln -s <tartget> <linkname>
 ```
