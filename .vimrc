@@ -48,13 +48,15 @@ execute pathogen#infect()
 
 autocmd VimEnter * if !argc() | NERDTree | endif
 
+" YouCompleteMe key mappings
 nnoremap <cr> :YcmCompleter FixIt<cr>
+nnoremap <F2> :YcmCompleter RefactorRename 
 
 " comment and vim-commentary
 nnoremap <C-/> :Commentary<cr>
 vnoremap <C-/> :Commentary<cr>
 
 
-colo one
+colo orbital
 set bg=dark
 
