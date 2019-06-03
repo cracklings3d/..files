@@ -1,6 +1,8 @@
+pushd ~/.vim/bundle/
 for d in */; do
-	cd "$d"
+	pushd "$d"
 	echo "updating $d"
 	git pull
-	cd ..
+	popd
 done
+popd
