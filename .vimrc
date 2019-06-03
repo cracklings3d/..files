@@ -57,6 +57,6 @@ nnoremap <C-/> :Commentary<cr>
 vnoremap <C-/> :Commentary<cr>
 
 
-colo orbital
+colo deep-space
 set bg=dark
 
