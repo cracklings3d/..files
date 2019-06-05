@@ -13,6 +13,10 @@ export ZSH="/home/crack/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='015'
+POWERLEVEL9K_DIR_ETC_FOREGROUND='015'
+POWERLEVEL9K_DIR_HOME_FOREGROUND='015'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='015'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
