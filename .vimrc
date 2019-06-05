@@ -31,6 +31,21 @@ set nu
 let g:clang_format#command = 'clang-format-7'
 let g:ycm_auto_trigger=1
 
+let g:plug_timeout=600
+
+call plug#begin('~/.vim/cr')
+Plug('https://github.com/scrooloose/nerdtree.git')
+Plug('https://github.com/wellle/targets.vim.git')
+Plug('https://github.com/leafgarland/typescript-vim.git')
+Plug('https://github.com/rhysd/vim-clang-format.git')
+Plug('https://github.com/tpope/vim-commentary.git')
+Plug('https://github.com/tpope/vim-surround.git')
+Plug('https://github.com/valloric/youcompleteme.git')
+Plug('https://github.com/ctrlpvim/ctrlp.vim.git')
+Plug('https://github.com/mattn/emmet-vim.git')
+Plug('https://github.com/NLKNguyen/papercolor-theme.git')
+call plug#end()
+
 filetype plugin indent on
 
 autocmd VimEnter * if !argc() | NERDTree | endif
