@@ -28,9 +28,9 @@ set wildmode=list:longest,full
 set rnu
 set nu
 
-let g:clang_format#command = 'clang-format-7'
+let g:clang_format#command='clang-format-7'
 let g:ycm_auto_trigger=1
-
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:plug_timeout=600
 
 call plug#begin('~/.vim/cr')
