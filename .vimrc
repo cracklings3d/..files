@@ -28,33 +28,16 @@ set wildmode=list:longest,full
 set rnu
 set nu
 
-let g:airline_powerline_fonts=1
-
-"if !exists('g:airline_symbols')
-"  let g:airline_symbols = {}
-"endif
-
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '◀'
-"let g:airline_symbols.linenr = 'L'
-"let g:airline_symbols.branch = '⎇'
-"let g:airline_symbols.paste = '∥'
-"let g:airline_symbols.whitespace = ' '
-
 let g:clang_format#command = 'clang-format-7'
+let g:ycm_auto_trigger=1
 
-execute pathogen#infect()
-" filetype plugin indent on
+filetype plugin indent on
 
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " YouCompleteMe key mappings
 nnoremap <cr> :YcmCompleter FixIt<cr>
 nnoremap <F2> :YcmCompleter RefactorRename 
-
-" comment and vim-commentary
-nnoremap <C-/> :Commentary<cr>
-vnoremap <C-/> :Commentary<cr>
 
 " window switching
 noremap <C-h> <C-w>h
