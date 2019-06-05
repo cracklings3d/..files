@@ -56,7 +56,12 @@ nnoremap <F2> :YcmCompleter RefactorRename
 nnoremap <C-/> :Commentary<cr>
 vnoremap <C-/> :Commentary<cr>
 
+" window switching
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
-colo deep-space
+colo PaperColor
 set bg=dark
 
