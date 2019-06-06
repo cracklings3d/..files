@@ -1,10 +1,10 @@
-# My dotfiles
+# Cr's dotfiles
 
-My collection of dotfiles for my own use. 
+This is my collection of dotfiles for my own use. 
 
 ## Setup
 
-Clone this repo into `~/`, create symlinks under `~/` with
+Clone this repo into somewhere, then create symlinks under `~/` with
 ```sh
 ln -s <tartget> <linkname>
 ```
