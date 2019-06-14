@@ -5,6 +5,8 @@ python3 del powerline_setup
 set ff=unix
 set encoding=utf-8
 syntax on
+set autoread
+set noswapfile
 
 set nocompatible
 set cmdheight=2
@@ -12,6 +14,7 @@ set showcmd
 
 " search
 set showmatch
+set hlsearch
 
 " tab and indent
 set tabstop=2
@@ -20,6 +23,8 @@ set softtabstop=2
 set noexpandtab
 set autoindent
 set smarttab
+
+set scrolloff=3
 
 set foldmethod=indent
 set wildmenu
@@ -40,6 +45,7 @@ Plug('https://github.com/leafgarland/typescript-vim.git')
 Plug('https://github.com/rhysd/vim-clang-format.git')
 Plug('https://github.com/tpope/vim-commentary.git')
 Plug('https://github.com/tpope/vim-surround.git')
+Plug('https://github.com/tpope/vim-repeat.git')
 Plug('https://github.com/valloric/youcompleteme.git')
 Plug('https://github.com/ctrlpvim/ctrlp.vim.git')
 Plug('https://github.com/mattn/emmet-vim.git')
