@@ -15,6 +15,7 @@ set showcmd
 " search
 set showmatch
 set hlsearch
+set incsearch
 
 " tab and indent
 set tabstop=2
