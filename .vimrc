@@ -44,6 +44,8 @@ Plug('https://github.com/valloric/youcompleteme.git')
 Plug('https://github.com/ctrlpvim/ctrlp.vim.git')
 Plug('https://github.com/mattn/emmet-vim.git')
 Plug('https://github.com/NLKNguyen/papercolor-theme.git')
+Plug('https://github.com/ryanneph/vim-qml.git')
+
 call plug#end()
 
 filetype plugin indent on
