@@ -88,6 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls='ls -f --color=always'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -116,13 +117,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+#[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-alias ls='ls -f --color=always'
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+. /usr/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 
 
