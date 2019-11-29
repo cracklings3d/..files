@@ -5,8 +5,10 @@ python3 del powerline_setup
 set ff=unix
 set encoding=utf-8
 syntax on
+au CursorHold,CursorHoldI * checktime
 set autoread
 set noswapfile
+set updatetime=1
 
 set nocompatible
 set cmdheight=2
