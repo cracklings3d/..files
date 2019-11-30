@@ -29,12 +29,15 @@ set smarttab
 
 set scrolloff=3
 
+" tab completes
 set foldmethod=indent
 set wildmenu
 set wildmode=list:longest,full
 
+" visual and look
 set rnu
 set nu
+set cursorline
 
 let g:clang_format#command='clang-format'
 let g:ycm_auto_trigger=1
