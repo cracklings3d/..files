@@ -5,8 +5,10 @@ python3 del powerline_setup
 set ff=unix
 set encoding=utf-8
 syntax on
+au CursorHold,CursorHoldI * checktime
 set autoread
 set noswapfile
+set updatetime=1
 
 set nocompatible
 set cmdheight=2
@@ -20,19 +22,24 @@ set incsearch
 " tab and indent
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
+set softtabstop=0
 set expandtab
 set autoindent
+set cindent
+set cinoptions=(0,u0,U0
 set smarttab
 
 set scrolloff=3
 
+" tab completes
 set foldmethod=indent
 set wildmenu
 set wildmode=list:longest,full
 
+" visual and look
 set rnu
 set nu
+set cursorline
 
 " By default, the statusline (and therefore Powerline) only appears when there are multiple windows open.
 " This enables it at all the time.
