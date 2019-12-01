@@ -34,6 +34,11 @@ set wildmode=list:longest,full
 set rnu
 set nu
 
+" By default, the statusline (and therefore Powerline) only appears when there are multiple windows open.
+" This enables it at all the time.
+set laststatus=2
+
+let g:powerline_pycmd="py"
 let g:clang_format#command='clang-format'
 let g:ycm_auto_trigger=1
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
