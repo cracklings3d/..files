@@ -51,6 +51,14 @@ let g:ycm_auto_trigger=1
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:plug_timeout=600
 
+let g:DoxygenToolkit_briefTag_pre="\\brief "
+let g:DoxygenToolkit_paramTag_pre="\\param "
+let g:DoxygenToolkit_returnTag="\\return "
+let g:DoxygenToolkit_blockHeader="-------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="-------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="Cracklings3D"
+let g:DoxygenToolkit_licenseTag="GPL v3"
+
 call plug#begin('~/.vim/cr')
 Plug('https://github.com/scrooloose/nerdtree.git')
 Plug('https://github.com/wellle/targets.vim.git')
