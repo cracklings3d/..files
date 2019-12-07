@@ -49,6 +49,7 @@ let g:powerline_pycmd="py"
 let g:clang_format#command='clang-format'
 let g:ycm_auto_trigger=1
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_use_clangd=0
 let g:plug_timeout=600
 
 let g:DoxygenToolkit_briefTag_pre="\\brief "
