@@ -73,5 +73,5 @@ def PythonSysPath( **kwargs ):
 
 def Settings( **kwargs ):
   return {
-    'flags': ['-x', 'c++', '-Wall', '-Wextra', '-Werror']
+    'flags': ['-x', 'c++', '--std=c++17', '-Wall', '-Wextra', '-Werror']
   }
