@@ -72,6 +72,7 @@ Plug('https://github.com/valloric/youcompleteme.git')
 Plug('https://github.com/ctrlpvim/ctrlp.vim.git')
 Plug('https://github.com/mattn/emmet-vim.git')
 Plug('https://github.com/NLKNguyen/papercolor-theme.git')
+Plug('https://github.com/tikhomirov/vim-glsl.git')
 call plug#end()
 
 filetype plugin indent on
@@ -81,6 +82,7 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 " YouCompleteMe key mappings
 nnoremap <cr> :YcmCompleter FixIt<cr>
 nnoremap <F2> :YcmCompleter RefactorRename 
+nnoremap <tab> :YcmDiags<cr>
 
 " window switching
 noremap <C-h> <C-w>h
