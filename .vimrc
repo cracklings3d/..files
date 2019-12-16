@@ -61,18 +61,19 @@ let g:DoxygenToolkit_authorName="Cracklings3D"
 let g:DoxygenToolkit_licenseTag="GPL v3"
 
 call plug#begin('~/.vim/cr')
-Plug('https://github.com/scrooloose/nerdtree.git')
-Plug('https://github.com/wellle/targets.vim.git')
-Plug('https://github.com/leafgarland/typescript-vim.git')
-Plug('https://github.com/rhysd/vim-clang-format.git')
-Plug('https://github.com/tpope/vim-commentary.git')
-Plug('https://github.com/tpope/vim-surround.git')
-Plug('https://github.com/tpope/vim-repeat.git')
-Plug('https://github.com/valloric/youcompleteme.git')
-Plug('https://github.com/ctrlpvim/ctrlp.vim.git')
-Plug('https://github.com/mattn/emmet-vim.git')
-Plug('https://github.com/NLKNguyen/papercolor-theme.git')
-Plug('https://github.com/tikhomirov/vim-glsl.git')
+Plug 'scrooloose/nerdtree.git'
+Plug 'wellle/targets.vim.git'
+Plug 'leafgarland/typescript-vim.git'
+Plug 'rhysd/vim-clang-format.git'
+Plug 'tpope/vim-commentary.git'
+Plug 'tpope/vim-surround.git'
+Plug 'tpope/vim-repeat.git'
+Plug 'valloric/youcompleteme.git'
+Plug 'ctrlpvim/ctrlp.vim.git'
+Plug 'mattn/emmet-vim.git'
+Plug 'NLKNguyen/papercolor-theme.git'
+Plug 'tikhomirov/vim-glsl.git'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 filetype plugin indent on
