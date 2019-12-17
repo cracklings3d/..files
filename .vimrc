@@ -45,34 +45,35 @@ set cursorline
 " This enables it at all the time.
 set laststatus=2
 
-let g:powerline_pycmd="py"
-let g:clang_format#command='clang-format'
-let g:ycm_auto_trigger=1
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
-let g:ycm_use_clangd=0
+let g:powerline_pycmd           = "py"
+let g:clang_format#command      = 'clang-format'
+let g:ycm_auto_trigger          = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_use_clangd            = 0
+
 let g:plug_timeout=600
 
-let g:DoxygenToolkit_briefTag_pre="\\brief "
-let g:DoxygenToolkit_paramTag_pre="\\param "
-let g:DoxygenToolkit_returnTag="\\return "
-let g:DoxygenToolkit_blockHeader="-------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="-------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="Cracklings3D"
-let g:DoxygenToolkit_licenseTag="GPL v3"
+let g:DoxygenToolkit_briefTag_pre = "\\brief "
+let g:DoxygenToolkit_paramTag_pre = "\\param "
+let g:DoxygenToolkit_returnTag    = "\\return "
+let g:DoxygenToolkit_blockHeader  = "-------------------------------------------"
+let g:DoxygenToolkit_blockFooter  = "-------------------------------------------"
+let g:DoxygenToolkit_authorName   = "Cracklings3D"
+let g:DoxygenToolkit_licenseTag   = "GPL v3"
 
 call plug#begin('~/.vim/cr')
-Plug 'scrooloose/nerdtree.git'
-Plug 'wellle/targets.vim.git'
-Plug 'leafgarland/typescript-vim.git'
-Plug 'rhysd/vim-clang-format.git'
-Plug 'tpope/vim-commentary.git'
-Plug 'tpope/vim-surround.git'
-Plug 'tpope/vim-repeat.git'
-Plug 'valloric/youcompleteme.git'
-Plug 'ctrlpvim/ctrlp.vim.git'
-Plug 'mattn/emmet-vim.git'
-Plug 'NLKNguyen/papercolor-theme.git'
-Plug 'tikhomirov/vim-glsl.git'
+Plug 'scrooloose/nerdtree'
+Plug 'wellle/targets.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'rhysd/vim-clang-format'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'valloric/youcompleteme'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'tikhomirov/vim-glsl'
 Plug 'junegunn/vim-easy-align'
 call plug#end()
 
@@ -84,6 +85,9 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 nnoremap <cr> :YcmCompleter FixIt<cr>
 nnoremap <F2> :YcmCompleter RefactorRename 
 nnoremap <tab> :YcmDiags<cr>
+
+vmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " window switching
 noremap <C-h> <C-w>h
