@@ -1,7 +1,3 @@
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
 set ff=unix
 set encoding=utf-8
 syntax on
@@ -45,34 +41,32 @@ set cursorline
 " This enables it at all the time.
 set laststatus=2
 
-let g:powerline_pycmd           = "py"
 let g:clang_format#command      = 'clang-format'
-let g:ycm_auto_trigger          = 1
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_use_clangd            = 0
 
-let g:plug_timeout=600
-
-let g:DoxygenToolkit_briefTag_pre = "\\brief "
-let g:DoxygenToolkit_paramTag_pre = "\\param "
-let g:DoxygenToolkit_returnTag    = "\\return "
-let g:DoxygenToolkit_authorName   = "Cracklings3D"
-let g:DoxygenToolkit_licenseTag   = "GPL v3"
-
-call plug#begin('~/.vim/cr')
+call plug#begin('~/.nvim/cr')
+" tools
 Plug 'scrooloose/nerdtree'
-Plug 'wellle/targets.vim'
-Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-fugitive'
+
+" editing
+Plug 'junegunn/vim-easy-align'
 Plug 'rhysd/vim-clang-format'
+
+" control
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'valloric/youcompleteme'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mattn/emmet-vim'
+Plug 'wellle/targets.vim'
+
+" colour theme 
 Plug 'NLKNguyen/papercolor-theme'
+
+" syntax highlighting
 Plug 'tikhomirov/vim-glsl'
-Plug 'junegunn/vim-easy-align'
+Plug 'leafgarland/typescript-vim'
+
+" code completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin indent on
@@ -80,9 +74,9 @@ filetype plugin indent on
 autocmd VimEnter * if !argc() | NERDTree | endif
 
 " YouCompleteMe key mappings
-nnoremap <cr> :YcmCompleter FixIt<cr>
-nnoremap <F2> :YcmCompleter RefactorRename 
-nnoremap <tab> :YcmDiags<cr>
+" nnoremap <cr> :YcmCompleter FixIt<cr>
+" nnoremap <F2> :YcmCompleter RefactorRename 
+" nnoremap <tab> :YcmDiags<cr>
 
 vmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
